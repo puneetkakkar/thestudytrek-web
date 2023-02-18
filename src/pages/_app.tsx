@@ -1,20 +1,20 @@
 import '@/styles/globals.css';
 import { theme } from '@/theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { Poppins } from '@next/font/google';
+import { Rubik } from '@next/font/google';
 import type { AppProps } from 'next/app';
 
-const poppins = Poppins({
+const rubik = Rubik({
   display: 'swap',
   weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
-  variable: '--poppins-font',
+  variable: '--rubik-font',
   subsets: ['latin']
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={poppins.variable}>
+    <div className={rubik.variable}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...pageProps} />

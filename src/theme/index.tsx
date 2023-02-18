@@ -35,5 +35,9 @@ export const theme = createTheme({
       dark: '#388e3c'
     }
   },
-  typography: {}
+  typography: {
+    allVariants: {
+      fontFamily: "'Rubik', sans-serif"
+    }
+  }
 });
