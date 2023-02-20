@@ -1,0 +1,86 @@
+import styles from '@/styles/Home.module.css';
+import { Box, Container, Grid, Typography } from '@mui/material';
+
+const WhyStudyTrek = () => {
+  return (
+    <Grid padding="5rem 0rem">
+      <Container>
+        <Typography
+          variant="h3"
+          fontWeight="500"
+          className={styles.rubik}
+          textAlign="center"
+          marginBottom="2.5rem"
+          fontSize="2.5rem"
+        >
+          Why The Study Trek Overseas Education?
+        </Typography>
+        <Grid display="flex" direction="row" alignItems="baseline">
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            margin="0rem 2rem"
+          >
+            <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
+              Multi Country Advantage
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              textAlign="center"
+              className={styles.rubik}
+              color="#64647a"
+              fontWeight="400"
+            >
+              29 countries across 4 continents – global study destinations we offer include some of
+              the best countries to study abroad.
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            margin="0rem 2rem"
+          >
+            <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
+              Global Universities
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              textAlign="center"
+              className={styles.rubik}
+              color="#64647a"
+            >
+              Choose the program that will define your future from our represented 700+ universities
+              all over the world.
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            margin="0rem 2rem"
+          >
+            <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
+              Students Placed
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              textAlign="center"
+              className={styles.rubik}
+              color="#64647a"
+            >
+              Leverage the expertise of our seasoned & friendly counsellors who have assisted
+              3,00,000 students reach their dream study destinations.
+            </Typography>
+          </Box>
+        </Grid>
+      </Container>
+    </Grid>
+  );
+};
+
+export default WhyStudyTrek;

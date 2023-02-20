@@ -1,3 +1,9 @@
+import MultiCountryAdvantage from '@/components/MultiCountryAdvantage';
+import ScholarshipProspects from '@/components/ScholarshipProspects';
+import StudyTrekByNumbers from '@/components/StudyTrekByNumbers';
+import StudyTrekServices from '@/components/StudyTrekServices';
+import StudyTrekTestimonials from '@/components/StudyTrekTestimonials';
+import WhyStudyTrek from '@/components/WhyStudyTrek';
 import styles from '@/styles/Home.module.css';
 import { theme } from '@/theme';
 import { Box, Container, Grid, Typography } from '@mui/material';
@@ -103,6 +109,12 @@ export default function Home() {
             </svg>
           </div>
         </Grid>
+        <WhyStudyTrek />
+        <MultiCountryAdvantage />
+        <ScholarshipProspects />
+        <StudyTrekServices />
+        <StudyTrekTestimonials />
+        <StudyTrekByNumbers />
       </main>
     </>
   );
