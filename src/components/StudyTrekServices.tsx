@@ -25,7 +25,7 @@ const StudyTrekServices = () => {
           marginBottom="3.5rem"
           fontSize="2.5rem"
         >
-          Why choose KC for Your Study Abroad Journey?
+          Why choose The Study Trek for Your Study Abroad Journey?
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={4}>
