@@ -1,3 +1,4 @@
+import { rubik } from '@/pages/_app';
 import styles from '@/styles/Home.module.css';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
@@ -13,7 +14,9 @@ const StudyTrekTestimonials = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          className={styles.rubik}
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
           textAlign="center"
           marginBottom="3.5rem"
           fontSize="2.5rem"
@@ -37,7 +40,9 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -45,7 +50,9 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -56,7 +63,13 @@ const StudyTrekTestimonials = () => {
                 <Image src={conversationIcon} alt="" className={styles.conversationIconStyle} />
               </Box>
               <Box padding="0rem 1rem" marginBottom="2rem">
-                <Typography variant="subtitle1" className={styles.rubik} fontWeight="500">
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
+                  fontWeight="500"
+                >
                   Helped with counselling and making the right decision. Great Staff. Would
                   recommend The Study Trek to everyone planning to go abroad for higher studies.
                 </Typography>
@@ -83,7 +96,9 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -91,7 +106,9 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -102,7 +119,13 @@ const StudyTrekTestimonials = () => {
                 <Image src={conversationIcon} alt="" className={styles.conversationIconStyle} />
               </Box>
               <Box padding="0rem 1rem" marginBottom="2rem">
-                <Typography variant="subtitle1" className={styles.rubik} fontWeight="500">
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
+                  fontWeight="500"
+                >
                   The Study Trek’s Education Fairs and Pre-Departure briefings are greatly
                   informative. The staff is quite well trained. I could apply to universities & get
                   my visa only because of them.
@@ -126,7 +149,9 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -134,7 +159,9 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -145,7 +172,13 @@ const StudyTrekTestimonials = () => {
                 <Image src={conversationIcon} alt="" className={styles.conversationIconStyle} />
               </Box>
               <Box padding="0rem 1rem" marginBottom="2rem">
-                <Typography variant="subtitle1" className={styles.rubik} fontWeight="500">
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
+                  fontWeight="500"
+                >
                   I got complete support for shortlisting universities, majors and writing SOPs. I
                   would recommend every student applying for the US to approach The Study Trek.{' '}
                 </Typography>

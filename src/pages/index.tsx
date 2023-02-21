@@ -13,6 +13,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import checkImage from 'public/Images/check.svg';
 import studentBannerImage from 'public/Images/student-banner-image.svg';
+import { rubik } from './_app';
 
 export default function Home() {
   return (
@@ -35,19 +36,28 @@ export default function Home() {
             >
               <Typography
                 variant="h3"
-                className={[styles.logo, styles.rubik].join(' ')}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
               >
                 The Study Trek
               </Typography>
-              <Typography variant="h6" className={styles.rubik}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
+              >
                 Overseas Education Consultant
               </Typography>
             </Box>
-            <Grid display="flex" direction="row" justifyContent="space-between">
+            <Grid display="flex" justifyContent="space-between">
               <Box paddingRight="0rem 1rem">
                 <Typography
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontSize="2rem"
                   fontWeight="500"
                   letterSpacing="0rem"
@@ -57,7 +67,9 @@ export default function Home() {
                 </Typography>
 
                 <Typography
-                  className={styles.rubik}
+                  sx={{
+                    fontFamily: rubik.style.fontFamily
+                  }}
                   fontSize="1.4rem"
                   marginBottom="1.2rem"
                   color={theme.palette.secondary.light}
@@ -67,24 +79,64 @@ export default function Home() {
                 </Typography>
                 <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
                   <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography className={styles.rubik} fontSize="1.4rem" fontWeight="500">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontSize="1.4rem"
+                    fontWeight="500"
+                  >
                     University Selection
                   </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
                   <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography className={styles.rubik} fontSize="1.4rem" fontWeight="500">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontSize="1.4rem"
+                    fontWeight="500"
+                  >
                     Scholarship Assistance
                   </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
                   <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography className={styles.rubik} fontSize="1.4rem" fontWeight="500">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontSize="1.4rem"
+                    fontWeight="500"
+                  >
                     Study Abroad Loan
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" width="40%" margin="4rem 0rem">
-                  <Button variant="contained" fullWidth={true} className={styles.primaryButton}>
+                  <Button
+                    variant="contained"
+                    fullWidth={true}
+                    sx={{
+                      background: 'hsla(0, 0%, 100%, 0.06)',
+                      padding: '14px 20px',
+                      borderWidth: '1px',
+                      borderColor: 'hsla(0, 0%, 100%, 0.21)',
+                      borderRadius: '999px',
+                      transition: 'all 200ms ease',
+                      color: '#fff',
+                      fontSize: '1.25rem',
+                      lineHeight: 1,
+                      fontWeight: 700,
+                      boxShadow: 'none',
+                      textTransform: 'capitalize',
+
+                      '&:hover': {
+                        background: 'hsla(0, 0%, 100%, 0.16)',
+                        boxShadow: 'none'
+                      }
+                    }}
+                  >
                     Register Now
                   </Button>
                 </Box>

@@ -1,3 +1,4 @@
+import { rubik } from '@/pages/_app';
 import styles from '@/styles/Home.module.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box, Grid, IconButton, TextField, Typography } from '@mui/material';
@@ -20,7 +21,9 @@ const Footer = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          className={styles.rubik}
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
           textAlign="center"
           marginBottom="2.5rem"
           fontSize="2.5rem"
@@ -28,7 +31,14 @@ const Footer = () => {
         >
           We are transcending borders and expanding our global reach.
         </Typography>
-        <Typography className={styles.rubik} textAlign="center" fontWeight="500" color="#fff">
+        <Typography
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
+          textAlign="center"
+          fontWeight="500"
+          color="#fff"
+        >
           Contact us through our office that is most convenient to you.
         </Typography>
         <Box position="relative">
@@ -66,12 +76,21 @@ const Footer = () => {
       <Grid container spacing={2} margin="0rem 5rem">
         <Grid item xs={2.5}>
           <Box display="flex" flexDirection="column">
-            <Typography variant="h5" className={styles.rubik} fontWeight="600" textAlign="center">
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
+              fontWeight="600"
+              textAlign="center"
+            >
               The Study Trek
             </Typography>
             <Typography
               variant="subtitle2"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               textAlign="center"
             >
@@ -83,7 +102,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >
@@ -93,7 +114,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >
@@ -103,7 +126,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >
@@ -115,7 +140,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >
@@ -125,7 +152,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >
@@ -135,7 +164,9 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              className={styles.rubik}
+              sx={{
+                fontFamily: rubik.style.fontFamily
+              }}
               fontWeight="600"
               color="#ae3728"
             >

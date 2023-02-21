@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css';
+import { rubik } from '@/pages/_app';
 import { theme } from '@/theme';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
@@ -18,7 +18,9 @@ const StudyAbroadFAQ = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          className={styles.rubik}
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
           textAlign="center"
           marginBottom="2.5rem"
           fontSize="2.5rem"
@@ -46,7 +48,9 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    className={styles.rubik}
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -54,7 +58,13 @@ const StudyAbroadFAQ = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className={styles.rubik} fontWeight="400" color="#64647a">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontWeight="400"
+                    color="#64647a"
+                  >
                     The costs associated with studying at a university or school abroad vary
                     greatly. It depends on the nature of your chosen program, the length of your
                     stay, the distance you travel and the kind of lifestyle you want when you get
@@ -84,7 +94,9 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    className={styles.rubik}
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -92,7 +104,13 @@ const StudyAbroadFAQ = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className={styles.rubik} fontWeight="400" color="#64647a">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontWeight="400"
+                    color="#64647a"
+                  >
                     Choosing where in the world you wish to study is not always an easy task. As
                     well as your own personal interests, you should think about practicalities such
                     as the costs of studying in that country (both tuition costs and living costs),
@@ -123,7 +141,9 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    className={styles.rubik}
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -131,7 +151,13 @@ const StudyAbroadFAQ = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className={styles.rubik} fontWeight="400" color="#64647a">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontWeight="400"
+                    color="#64647a"
+                  >
                     Application deadlines will be different depending on the school, but, for
                     programs starting in the fall (September/October), applications will generally
                     be open from early in the year (January/February) until the middle of the year
@@ -161,7 +187,9 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    className={styles.rubik}
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -169,7 +197,13 @@ const StudyAbroadFAQ = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography className={styles.rubik} fontWeight="400" color="#64647a">
+                  <Typography
+                    sx={{
+                      fontFamily: rubik.style.fontFamily
+                    }}
+                    fontWeight="400"
+                    color="#64647a"
+                  >
                     Entry requirements vary widely between universities and between countries, so be
                     sure to check the information provided by your prospective university before
                     submitting anything.

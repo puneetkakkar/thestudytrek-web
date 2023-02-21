@@ -1,5 +1,5 @@
 import useOnScreen from '@/hooks/useOnScreen';
-import styles from '@/styles/Home.module.css';
+import { rubik } from '@/pages/_app';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import { useRef } from 'react';
 import Count from './Count';
@@ -14,7 +14,9 @@ const StudyTrekByNumbers = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          className={styles.rubik}
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
           textAlign="center"
           marginBottom="2.5rem"
           fontSize="2.5rem"
@@ -34,7 +36,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#FF8900'
@@ -46,7 +50,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -55,7 +61,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >
@@ -76,7 +84,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#803DEA'
@@ -88,7 +98,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -97,7 +109,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >
@@ -118,7 +132,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#FF0A0A'
@@ -130,7 +146,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -139,7 +157,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >
@@ -160,7 +180,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#3D86EA'
@@ -172,7 +194,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -181,7 +205,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >
@@ -202,7 +228,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#F0A248'
@@ -214,7 +242,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -223,7 +253,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >
@@ -244,7 +276,9 @@ const StudyTrekByNumbers = () => {
                 isVisible={isVisible}
                 countTypographyStyle={{
                   variant: 'h4',
-                  className: styles.rubik,
+                  sx: {
+                    fontFamily: rubik.style.fontFamily
+                  },
                   marginBottom: '1rem',
                   fontWeight: '500',
                   color: '#3DA1EA'
@@ -256,7 +290,9 @@ const StudyTrekByNumbers = () => {
               />
               <Typography
                 variant="h5"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 marginBottom="1rem"
                 fontWeight="500"
               >
@@ -265,7 +301,9 @@ const StudyTrekByNumbers = () => {
               <Typography
                 variant="subtitle1"
                 textAlign="center"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 color="#64647a"
                 fontWeight="400"
               >

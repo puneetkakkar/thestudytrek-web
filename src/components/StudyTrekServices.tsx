@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css';
+import { rubik } from '@/pages/_app';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import admissionIcon from 'public/Images/admission-icon.png';
@@ -18,7 +18,9 @@ const StudyTrekServices = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          className={styles.rubik}
+          sx={{
+            fontFamily: rubik.style.fontFamily
+          }}
           textAlign="center"
           marginBottom="3.5rem"
           fontSize="2.5rem"
@@ -31,7 +33,9 @@ const StudyTrekServices = () => {
               <Image src={onlineCounsellingIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -45,7 +49,9 @@ const StudyTrekServices = () => {
               <Image src={universityIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -59,7 +65,9 @@ const StudyTrekServices = () => {
               <Image src={standardizedTestIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -73,7 +81,9 @@ const StudyTrekServices = () => {
               <Image src={admissionIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -87,7 +97,9 @@ const StudyTrekServices = () => {
               <Image src={loanIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -101,7 +113,9 @@ const StudyTrekServices = () => {
               <Image src={visaIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -115,7 +129,9 @@ const StudyTrekServices = () => {
               <Image src={scholarshipIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -129,7 +145,9 @@ const StudyTrekServices = () => {
               <Image src={documentsIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
@@ -143,7 +161,9 @@ const StudyTrekServices = () => {
               <Image src={forexIcon} alt="" width={60} height={60} />
               <Typography
                 variant="h6"
-                className={styles.rubik}
+                sx={{
+                  fontFamily: rubik.style.fontFamily
+                }}
                 fontWeight="500"
                 textAlign="center"
                 marginTop="2rem"
