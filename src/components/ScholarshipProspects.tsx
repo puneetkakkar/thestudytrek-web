@@ -5,7 +5,14 @@ import graduateScholarIcon from 'public/Images/graduate-scholar-image.png';
 
 const ScholarshipProspects = () => {
   return (
-    <Grid direction="row" width="100%" padding="5rem 5rem" bgcolor="#ffe7c9" flexWrap={'wrap'}>
+    <Grid
+      direction="row"
+      width="100%"
+      padding="5rem 5rem"
+      // bgcolor="#ffe7c9"
+      bgcolor="#ff613c"
+      flexWrap={'wrap'}
+    >
       <Box>
         <Typography
           variant="h3"
@@ -14,13 +21,14 @@ const ScholarshipProspects = () => {
           textAlign="center"
           marginBottom="3rem"
           fontSize="2.5rem"
+          color="#fff"
         >
           Step Up your Study Abroad Prospects with Scholarships
         </Typography>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={4} paddingTop="3rem">
           <Grid item xs={6} sm container spacing={6}>
-            <Grid item xs={12} display="flex" flexDirection="column" rowGap={4}>
+            <Grid item xs={12} display="flex" flexDirection="column" rowGap={4} color="#fff">
               <Typography variant="h5" className={styles.rubik} fontWeight="400">
                 Most of the global universities and colleges provide scholarships to International
                 students based on merit, need or other criteria as well.

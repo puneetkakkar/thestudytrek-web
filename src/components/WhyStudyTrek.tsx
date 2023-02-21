@@ -1,5 +1,9 @@
 import styles from '@/styles/Home.module.css';
 import { Box, Container, Grid, Typography } from '@mui/material';
+import Image from 'next/image';
+import globalUniversitiesIcon from 'public/Images/global-universities-icon.png';
+import studentPlacedIcon from 'public/Images/student-placed-icon.png';
+import worldLocationIcon from 'public/Images/world-location-icon.png';
 
 const WhyStudyTrek = () => {
   return (
@@ -10,7 +14,7 @@ const WhyStudyTrek = () => {
           fontWeight="500"
           className={styles.rubik}
           textAlign="center"
-          marginBottom="2.5rem"
+          marginBottom="5rem"
           fontSize="2.5rem"
         >
           Why The Study Trek Overseas Education?
@@ -23,6 +27,11 @@ const WhyStudyTrek = () => {
             justifyContent="center"
             margin="0rem 2rem"
           >
+            <Image
+              src={worldLocationIcon}
+              alt=""
+              style={{ width: '4rem', height: '4rem', margin: '1rem 0rem' }}
+            />
             <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
               Multi Country Advantage
             </Typography>
@@ -44,6 +53,11 @@ const WhyStudyTrek = () => {
             justifyContent="center"
             margin="0rem 2rem"
           >
+            <Image
+              src={globalUniversitiesIcon}
+              alt=""
+              style={{ width: '4rem', height: '4rem', margin: '1rem 0rem' }}
+            />
             <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
               Global Universities
             </Typography>
@@ -64,6 +78,11 @@ const WhyStudyTrek = () => {
             justifyContent="center"
             margin="0rem 2rem"
           >
+            <Image
+              src={studentPlacedIcon}
+              alt=""
+              style={{ width: '4rem', height: '4rem', margin: '1rem 0rem' }}
+            />
             <Typography variant="h5" className={styles.rubik} marginBottom="1rem" fontWeight="500">
               Students Placed
             </Typography>

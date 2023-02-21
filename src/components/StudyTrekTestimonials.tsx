@@ -8,7 +8,7 @@ import studentThirdDisplayImage from 'public/Images/student-3-image-resized.png'
 
 const StudyTrekTestimonials = () => {
   return (
-    <Grid padding="5rem 0rem" bgcolor={'#EFEFEF'} width="100%">
+    <Grid padding="5rem 0rem" width="100%">
       <Container>
         <Typography
           variant="h3"
@@ -18,7 +18,7 @@ const StudyTrekTestimonials = () => {
           marginBottom="3.5rem"
           fontSize="2.5rem"
         >
-          Check What Our Students & Delegates Say
+          Check What Our Students Say
         </Typography>
         <Grid container spacing={8}>
           <Grid item xs={4}>
