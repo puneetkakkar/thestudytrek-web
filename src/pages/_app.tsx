@@ -1,41 +1,58 @@
 import '@/styles/globals.css';
-import { theme } from '@/theme';
-import createCache from '@emotion/cache';
-import { CacheProvider } from '@emotion/react';
+import theme from '@/theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { Rubik } from '@next/font/google';
+import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
-import { useEffect } from 'react';
 
-const cache = createCache({
-  key: 'css',
-  prepend: true
+export const RobotoSlabFont = localFont({
+  src: '../../public/fonts/RobotoSlab-VariableFont_wght.ttf',
+  variable: '--roboto-slab'
 });
 
-export const rubik = Rubik({
-  display: 'swap',
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--rubik-font',
-  subsets: ['latin']
+export const InterFont = localFont({
+  src: '../../public/fonts/Inter-VariableFont_slnt,wght.ttf',
+  variable: '--inter'
+});
+
+export const NanumMyeongjoFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/Nanum_Myeongjo/NanumMyeongjo-Bold.ttf',
+      weight: '700',
+      style: 'bold'
+    },
+    {
+      path: '../../public/fonts/Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf',
+      weight: '800',
+      style: 'extra-bold'
+    }
+  ],
+  variable: '--nanum-myeongjo'
+});
+
+export const AntonFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Anton/Anton-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    }
+  ],
+  variable: '--anton'
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles) {
-      jssStyles.parentElement?.removeChild(jssStyles);
-    }
-  }, []);
-
   return (
-    <CacheProvider value={cache}>
-      <div className={rubik.variable}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </div>
-    </CacheProvider>
+    <div className={RobotoSlabFont.className}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </div>
   );
 }

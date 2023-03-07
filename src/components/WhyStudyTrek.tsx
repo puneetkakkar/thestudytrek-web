@@ -1,4 +1,3 @@
-import { rubik } from '@/pages/_app';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import globalUniversitiesIcon from 'public/Images/global-universities-icon.png';
@@ -12,9 +11,11 @@ const WhyStudyTrek = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          sx={{
-            fontFamily: rubik.style.fontFamily
-          }}
+          sx={
+            {
+              // fontFamily: rubik.style.fontFamily
+            }
+          }
           textAlign="center"
           marginBottom="5rem"
           fontSize="2.5rem"
@@ -36,9 +37,11 @@ const WhyStudyTrek = () => {
             />
             <Typography
               variant="h5"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               marginBottom="1rem"
               fontWeight="500"
             >
@@ -47,9 +50,11 @@ const WhyStudyTrek = () => {
             <Typography
               variant="subtitle1"
               textAlign="center"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               color="#64647a"
               fontWeight="400"
             >
@@ -71,9 +76,11 @@ const WhyStudyTrek = () => {
             />
             <Typography
               variant="h5"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               marginBottom="1rem"
               fontWeight="500"
             >
@@ -82,9 +89,11 @@ const WhyStudyTrek = () => {
             <Typography
               variant="subtitle1"
               textAlign="center"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               color="#64647a"
             >
               Choose the program that will define your future from our represented 700+ universities
@@ -105,9 +114,11 @@ const WhyStudyTrek = () => {
             />
             <Typography
               variant="h5"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               marginBottom="1rem"
               fontWeight="500"
             >
@@ -116,9 +127,11 @@ const WhyStudyTrek = () => {
             <Typography
               variant="subtitle1"
               textAlign="center"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               color="#64647a"
             >
               Leverage the expertise of our seasoned & friendly counsellors who have assisted

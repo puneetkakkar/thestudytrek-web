@@ -1,5 +1,5 @@
-import { rubik } from '@/pages/_app';
 import styles from '@/styles/Home.module.css';
+import theme from '@/theme';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box, Grid, IconButton, TextField, Typography } from '@mui/material';
 
@@ -21,9 +21,11 @@ const Footer = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          sx={{
-            fontFamily: rubik.style.fontFamily
-          }}
+          sx={
+            {
+              // fontFamily: rubik.style.fontFamily
+            }
+          }
           textAlign="center"
           marginBottom="2.5rem"
           fontSize="2.5rem"
@@ -32,9 +34,11 @@ const Footer = () => {
           We are transcending borders and expanding our global reach.
         </Typography>
         <Typography
-          sx={{
-            fontFamily: rubik.style.fontFamily
-          }}
+          sx={
+            {
+              // fontFamily: rubik.style.fontFamily
+            }
+          }
           textAlign="center"
           fontWeight="500"
           color="#fff"
@@ -78,21 +82,30 @@ const Footer = () => {
           <Box display="flex" flexDirection="column">
             <Typography
               variant="h5"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
               textAlign="center"
+              color={theme.palette.primary.contrastText}
+              textTransform="uppercase"
             >
               The Study Trek
             </Typography>
             <Typography
               variant="subtitle2"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
+              fontSize="0.7rem"
               fontWeight="600"
               textAlign="center"
+              color={theme.palette.primary.contrastText}
+              textTransform="uppercase"
             >
               Overseas Education Consultant
             </Typography>
@@ -102,11 +115,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Instagram
             </Typography>
@@ -114,11 +130,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Facebook
             </Typography>
@@ -126,11 +145,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle1"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Twitter
             </Typography>
@@ -140,11 +162,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Copyright © The Study Trek 2022-2023
             </Typography>
@@ -152,11 +177,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Terms and Conditions
             </Typography>
@@ -164,11 +192,14 @@ const Footer = () => {
           <Box>
             <Typography
               variant="subtitle2"
-              sx={{
-                fontFamily: rubik.style.fontFamily
-              }}
+              sx={
+                {
+                  // fontFamily: rubik.style.fontFamily
+                }
+              }
               fontWeight="600"
-              color="#ae3728"
+              // color="#ae3728"
+              color="#ffffff82"
             >
               Privacy Policy
             </Typography>

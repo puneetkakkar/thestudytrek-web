@@ -4,7 +4,7 @@
   --primary-dark: #0044c9;
   --primary-contrast-text: #fff;
 
-  --secondary-main: #ff5200;
+  --secondary-main: #EA384D;
   --secondary-light: #ff863c;
   --secondary-dark: #c31200;
   --secondary-contrast-text: #fff;
@@ -69,7 +69,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 a {

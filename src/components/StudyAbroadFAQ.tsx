@@ -1,5 +1,4 @@
-import { rubik } from '@/pages/_app';
-import { theme } from '@/theme';
+import theme from '@/theme';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
@@ -18,9 +17,11 @@ const StudyAbroadFAQ = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          sx={{
-            fontFamily: rubik.style.fontFamily
-          }}
+          sx={
+            {
+              // fontFamily: rubik.style.fontFamily
+            }
+          }
           textAlign="center"
           marginBottom="2.5rem"
           fontSize="2.5rem"
@@ -48,9 +49,11 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -59,9 +62,11 @@ const StudyAbroadFAQ = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="400"
                     color="#64647a"
                   >
@@ -94,9 +99,11 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -105,9 +112,11 @@ const StudyAbroadFAQ = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="400"
                     color="#64647a"
                   >
@@ -141,9 +150,11 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -152,9 +163,11 @@ const StudyAbroadFAQ = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="400"
                     color="#64647a"
                   >
@@ -187,9 +200,11 @@ const StudyAbroadFAQ = () => {
                   id="panel1a-header"
                 >
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="600"
                     color={theme.palette.primary.main}
                   >
@@ -198,9 +213,11 @@ const StudyAbroadFAQ = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
+                    sx={
+                      {
+                        // fontFamily: rubik.style.fontFamily
+                      }
+                    }
                     fontWeight="400"
                     color="#64647a"
                   >

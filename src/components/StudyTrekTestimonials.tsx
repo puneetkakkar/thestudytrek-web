@@ -1,4 +1,3 @@
-import { rubik } from '@/pages/_app';
 import styles from '@/styles/Home.module.css';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
@@ -14,9 +13,11 @@ const StudyTrekTestimonials = () => {
         <Typography
           variant="h3"
           fontWeight="500"
-          sx={{
-            fontFamily: rubik.style.fontFamily
-          }}
+          sx={
+            {
+              // fontFamily: rubik.style.fontFamily
+            }
+          }
           textAlign="center"
           marginBottom="3.5rem"
           fontSize="2.5rem"
@@ -40,9 +41,11 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -50,9 +53,11 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -65,9 +70,11 @@ const StudyTrekTestimonials = () => {
               <Box padding="0rem 1rem" marginBottom="2rem">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                 >
                   Helped with counselling and making the right decision. Great Staff. Would
@@ -96,9 +103,11 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -106,9 +115,11 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -121,9 +132,11 @@ const StudyTrekTestimonials = () => {
               <Box padding="0rem 1rem" marginBottom="2rem">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                 >
                   The Study Trek’s Education Fairs and Pre-Departure briefings are greatly
@@ -149,9 +162,11 @@ const StudyTrekTestimonials = () => {
               <Box paddingLeft="3rem" textAlign="right" width="100%">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                   textAlign="center"
                 >
@@ -159,9 +174,11 @@ const StudyTrekTestimonials = () => {
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="400"
                   textAlign="center"
                 >
@@ -174,9 +191,11 @@ const StudyTrekTestimonials = () => {
               <Box padding="0rem 1rem" marginBottom="2rem">
                 <Typography
                   variant="subtitle1"
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
+                  sx={
+                    {
+                      // fontFamily: rubik.style.fontFamily
+                    }
+                  }
                   fontWeight="500"
                 >
                   I got complete support for shortlisting universities, majors and writing SOPs. I

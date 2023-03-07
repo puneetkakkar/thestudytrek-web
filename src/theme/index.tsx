@@ -1,9 +1,13 @@
-import { createTheme } from '@mui/material/styles';
+import { AntonFont, NanumMyeongjoFont } from '@/pages/_app';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-export const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
-      main: '#0d6efd',
+      // main: '#0d6efd',
+      // main: '#f84f39',
+      // main: '#f8381f',
+      main: '#EA384D',
       light: '#6c9cff',
       // dark: '#0044c9',
       dark: '#6C00FF',
@@ -37,8 +41,13 @@ export const theme = createTheme({
     }
   },
   typography: {
-    allVariants: {
-      fontFamily: "'Rubik', sans-serif"
+    fontFamily: NanumMyeongjoFont.style.fontFamily,
+    h2: {
+      fontFamily: AntonFont.style.fontFamily
     }
   }
 });
+
+theme = responsiveFontSizes(theme);
+
+export default theme;

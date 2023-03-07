@@ -1,5 +1,7 @@
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import MultiCountryAdvantage from '@/components/MultiCountryAdvantage';
+import OnlineCounsellingBanner from '@/components/OnlineCounsellingBanner';
 import ScholarshipProspects from '@/components/ScholarshipProspects';
 import StudyAbroadFAQ from '@/components/StudyAbroadFAQ';
 import StudyTrekByNumbers from '@/components/StudyTrekByNumbers';
@@ -7,13 +9,8 @@ import StudyTrekServices from '@/components/StudyTrekServices';
 import StudyTrekTestimonials from '@/components/StudyTrekTestimonials';
 import WhyStudyTrek from '@/components/WhyStudyTrek';
 import styles from '@/styles/Home.module.css';
-import { theme } from '@/theme';
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import Head from 'next/head';
-import Image from 'next/image';
-import checkImage from 'public/Images/check.svg';
-import studentBannerImage from 'public/Images/student-banner-image.svg';
-import { rubik } from './_app';
 
 export default function Home() {
   return (
@@ -25,128 +22,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Grid className={styles.bannerWrapper}>
-          <Container className={styles.container}>
-            <Box
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              width="fit-content"
-              paddingBottom="2rem"
-            >
-              <Typography
-                variant="h3"
-                sx={{
-                  fontFamily: rubik.style.fontFamily
-                }}
-                fontWeight="500"
-              >
-                The Study Trek
-              </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontFamily: rubik.style.fontFamily
-                }}
-              >
-                Overseas Education Consultant
-              </Typography>
-            </Box>
-            <Grid display="flex" justifyContent="space-between">
-              <Box paddingRight="0rem 1rem">
-                <Typography
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
-                  fontSize="2rem"
-                  fontWeight="500"
-                  letterSpacing="0rem"
-                  marginBottom="0.2rem"
-                >
-                  Let your study abroad dreams take flight!
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontFamily: rubik.style.fontFamily
-                  }}
-                  fontSize="1.4rem"
-                  marginBottom="1.2rem"
-                  color={theme.palette.secondary.light}
-                >
-                  Start your journey today with a free online counseling from Study Trek’s expert
-                  team
-                </Typography>
-                <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
-                  <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
-                    fontSize="1.4rem"
-                    fontWeight="500"
-                  >
-                    University Selection
-                  </Typography>
-                </Box>
-                <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
-                  <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
-                    fontSize="1.4rem"
-                    fontWeight="500"
-                  >
-                    Scholarship Assistance
-                  </Typography>
-                </Box>
-                <Box display="flex" flexDirection="row" alignItems="center" marginBottom="1.2rem">
-                  <Image src={checkImage} alt="" className={styles.checkImage} />
-                  <Typography
-                    sx={{
-                      fontFamily: rubik.style.fontFamily
-                    }}
-                    fontSize="1.4rem"
-                    fontWeight="500"
-                  >
-                    Study Abroad Loan
-                  </Typography>
-                </Box>
-                <Box display="flex" alignItems="flex-start" width="40%" margin="4rem 0rem">
-                  <Button
-                    variant="contained"
-                    fullWidth={true}
-                    sx={{
-                      background: 'hsla(0, 0%, 100%, 0.06)',
-                      padding: '14px 20px',
-                      borderWidth: '1px',
-                      borderColor: 'hsla(0, 0%, 100%, 0.21)',
-                      borderRadius: '999px',
-                      transition: 'all 200ms ease',
-                      color: '#fff',
-                      fontSize: '1.25rem',
-                      lineHeight: 1,
-                      fontWeight: 700,
-                      boxShadow: 'none',
-                      textTransform: 'capitalize',
-
-                      '&:hover': {
-                        background: 'hsla(0, 0%, 100%, 0.16)',
-                        boxShadow: 'none'
-                      }
-                    }}
-                  >
-                    Register Now
-                  </Button>
-                </Box>
-              </Box>
-              <Box display="flex" alignItems="center" justifyContent="center">
-                <Image src={studentBannerImage} alt="" className={styles.studentBannerImage} />
-              </Box>
-            </Grid>
-          </Container>
-          <div style={{ overflow: 'hidden', display: 'flex' }}>
+        <Header />
+        <Box className={styles.bannerWrapper}>
+          <OnlineCounsellingBanner />
+          {/* <Box style={{ overflow: 'hidden', display: 'flex' }}>
             <svg
               preserveAspectRatio="none"
               viewBox="0 0 1200 120"
@@ -163,8 +42,9 @@ export default function Home() {
               />
               <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
             </svg>
-          </div>
-        </Grid>
+          </Box> */}
+        </Box>
+
         <Box position="relative" width="100%" overflow="hidden" paddingBottom="3rem">
           <Box className={styles.sectionBlob}>
             <svg
@@ -226,7 +106,7 @@ M417.861 42.5151C670.861 -104.985 819.632 154.775 1099.63 461.275C1311.63 653.61
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path fill="#f84f39">
+              <path fill="#D31027">
                 <animate
                   attributeName="d"
                   dur="30s"
