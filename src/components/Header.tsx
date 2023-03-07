@@ -43,13 +43,13 @@ const Header = () => {
               !isWindowTopReached ? theme.palette.primary.main : theme.palette.primary.contrastText
             }
             fontFamily={RobotoSlabFont.style.fontFamily}
-            sx={{ fontSize: { xs: 30, sm: 35, lg: 38 } }}
+            sx={{ fontSize: { xs: 22, sm: 35, lg: 38 } }}
           >
             The Study Trek
           </Typography>
           <Typography
             variant="subtitle1"
-            sx={{ fontSize: { xs: 14, sm: 16, lg: 18 } }}
+            sx={{ fontSize: { xs: 10, sm: 16, lg: 18 } }}
             fontWeight={800}
             textTransform="uppercase"
             color={

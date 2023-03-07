@@ -23,7 +23,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header />
-        <Box className={styles.bannerWrapper}>
+        <Box
+          className={styles.bannerWrapper}
+          sx={{ paddingTop: { xs: 1, sm: 2, md: 4 }, paddingBottom: { xs: 1, sm: 2, md: 8 } }}
+        >
           <OnlineCounsellingBanner />
           {/* <Box style={{ overflow: 'hidden', display: 'flex' }}>
             <svg
